@@ -1,0 +1,41 @@
+.aboutUsContainer{
+    display: flex; /* Enables flex layout for children */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Adds space between the elements */
+    background-color: #fff;
+    align-items: center;
+    padding-left: 80px;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 46px;
+    font-size: 46px;
+  }
+ h1 {
+    text-align: center;
+    padding-bottom: 0px;
+    font-size: 46px;
+  }
+
+.aboutUsContainer p {
+  text-align: center;
+}
+  .megacontainer{
+    flex-direction: column;
+    display: flex;
+    flex-flow: column;
+  }
+  .sideImage{
+    flex: 1;
+    background-image: url('/public/images/img-1.jpg'); /* Use the path to your image */
+    max-width: 30%;
+    background-size: cover;
+    background-position: center;
+    height: 100px; 
+    border-radius: 8px; 
+    align-content: center;
+  }
+  .card-items{
+    max-width: 60%;
+    flex: 1;
+  }
