@@ -58,7 +58,7 @@ Except for weather-related cancellations, the church has not cancelled services,
         </button>
       )}
      
-      </div>
+      </div> 
       <div className= "sideImage">
       </div>
     </div>
