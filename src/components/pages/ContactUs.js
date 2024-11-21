@@ -1,5 +1,6 @@
 import React, { useState }  from 'react'
 import "../ContactUs.css"
+import emailjs from 'emailjs-com';
 
 function ContactUs() {
 
@@ -8,10 +9,27 @@ function ContactUs() {
   
     const handleSubmit = (e) => {
       e.preventDefault();
-      // Perform form submission logic here
-      alert('Message sent! We will get back to you soon.');
-      setEmail('');
-      setMessage('');
+      const templateParams = {
+        email,
+        message,
+      };
+    
+      emailjs
+        .send(
+          'service_kebdwqj',  // Replace with your EmailJS service ID
+          'template_h8b9sr7', // Replace with your EmailJS template ID
+          templateParams,
+          'grace'      // Replace with your EmailJS user ID
+        )
+        .then((response) => {
+          alert('Message sent successfully!');
+          setEmail('');
+          setMessage('');
+        })
+        .catch((error) => {
+          alert('Failed to send message, please try again later.');
+          console.error('EmailJS error:', error);
+        });
     };
   return (
     <div className= "ContactUsContainer">
