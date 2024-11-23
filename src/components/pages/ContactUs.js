@@ -2,7 +2,7 @@ import React, { useState }  from 'react'
 import "../ContactUs.css"
 import emailjs from 'emailjs-com';
 
-function ContactUs() {
+function ContactUs() {   
 
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
