@@ -14,7 +14,7 @@ h3 {
  h1 {
     text-align: center;
     padding-bottom: 0px;
-    font-size: 46px;
+    font-size: 56px;
   }
 
 .aboutUsContainer p {
@@ -24,6 +24,7 @@ h3 {
     flex-direction: column;
     display: flex;
     flex-flow: column;
+    background-color: #fff;
   }
   .sideImage{
     flex: 1;

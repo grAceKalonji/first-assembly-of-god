@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./aboutUs.css"
 import ReactMarkdown from 'react-markdown'
+import { faBold } from '@fortawesome/free-solid-svg-icons';
 
 
 function AboutUsSection() {
@@ -41,22 +42,25 @@ Except for weather-related cancellations, the church has not cancelled services,
   };
 
   // Conditionally render either the full text or a truncated version
-  const displayedText = isExpanded ? fullText : fullText.slice(0, maxLength) + '...';
+  const displayedText = isExpanded ? fullText : fullText.slice(0, maxLength) + ' ...';
 
   return (
     <section id="AboutUs">
     <div className ="megacontainer">
+    <h1>Learn about Us</h1>
     <div className="aboutUsContainer">
-        <div className = "card-items">
-      <h1>Learn about Us</h1>
+    
+    <div className = "card-items">
+      
       <p>
         <ReactMarkdown>{displayedText}</ReactMarkdown>
-      </p> 
-      {fullText.length > maxLength && (
-        <button onClick={toggleExpanded} style={{ color: 'blue', cursor: 'pointer', border: 'none', background: 'none' }}>
+        {fullText.length > maxLength && (
+        <button onClick={toggleExpanded} style={{ color: 'blue', cursor: 'pointer', border: 'none', background: 'none'}}>
           {isExpanded ? 'See Less' : 'See More'}
         </button>
       )}
+      </p> 
+      
      
       </div> 
       <div className= "sideImage">
