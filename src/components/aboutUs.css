@@ -38,6 +38,9 @@ h3 {
     margin-left: 80px;
     margin-right: 80px;
   }
+  .backgroundcontainer{
+    background-color: #fff;
+  }
   .sideImage{
     flex: 1;
     background-image: url('/public/images/img-1.jpg'); /* Use the path to your image */

@@ -46,6 +46,7 @@ Except for weather-related cancellations, the church has not cancelled services,
 
   return (
     <section id="AboutUs">
+    <div classname = 'backgroundcontainer'>
     <div className ='generalContainer'>
     <div className ="megacontainer">
     <h4>Learn about Us</h4>
@@ -66,6 +67,7 @@ Except for weather-related cancellations, the church has not cancelled services,
       </div> 
       <div className= "sideImage">
       </div>
+    </div>
     </div>
     </div>
     </div>
