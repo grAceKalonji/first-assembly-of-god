@@ -33,13 +33,14 @@ h3 {
   }
 
   .generalContainer{
-    background-color: #9e9561;
-    border-radius: 16px;
-    margin-left: 80px;
-    margin-right: 80px;
+    background-color: #ffffff;
   }
   .backgroundcontainer{
-    background-color: #fff;
+    z-index: 3;
+    background-color: #693030;
+    padding-left: 80px;
+    margin-right: 80px;
+    border-radius: 16px;
   }
   .sideImage{
     flex: 1;

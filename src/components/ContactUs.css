@@ -22,6 +22,7 @@
 
 .card__info-card {
   width:545px;
+  align-content: center;
   background-color: #f0ecec;
   border-radius: 20px;
   padding: 8px;

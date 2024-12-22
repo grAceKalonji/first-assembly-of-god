@@ -45,9 +45,10 @@ Except for weather-related cancellations, the church has not cancelled services,
   const displayedText = isExpanded ? fullText : fullText.slice(0, maxLength) + ' ...';
 
   return (
-    <section id="AboutUs">
-    <div classname = 'backgroundcontainer'>
     <div className ='generalContainer'>
+    <section id="AboutUs">
+    
+    <div classname = 'backgroundcontainer'>
     <div className ="megacontainer">
     <h4>Learn about Us</h4>
     <div className="aboutUsContainer">
@@ -70,8 +71,9 @@ Except for weather-related cancellations, the church has not cancelled services,
     </div>
     </div>
     </div>
-    </div>
+    
     </section>
+    </div>
   );
 }
 
