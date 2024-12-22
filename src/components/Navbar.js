@@ -2,8 +2,6 @@ import React, {useState, useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link as ScrollLink } from 'react-scroll';
-
-
 import "./navbar.css";
 
 function Navbar() {
@@ -26,8 +24,8 @@ function Navbar() {
 
   useEffect(() => 
     { showButton(); void
-showButton()
-}, []);
+    showButton()
+    }, []);
 
   window.addEventListener("resize", showButton);
 

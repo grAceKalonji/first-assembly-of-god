@@ -1,6 +1,7 @@
 import React, { useState }  from 'react'
 import "../ContactUs.css"
 import emailjs from 'emailjs-com';
+import MyGoogleMap from './googlePin';
 
 function ContactUs() {   
 
@@ -34,6 +35,13 @@ function ContactUs() {
   return (
     <div className= "ContactUsContainer">
       <h1> Contact Us</h1>
+      
+      
+      <div className= "columnContainer">
+
+      <div className='card__info-card'>
+        <p> Have questions or need prayer? We’re here for you! Reach out to connect, share your needs, or learn more about our church. Together, we can grow in faith and make a difference.</p>
+      </div>
       <form onSubmit={handleSubmit} className="contact-form">
         <label htmlFor="email">Email:</label>
         <input
@@ -56,7 +64,15 @@ function ContactUs() {
 
         <button type="submit" className="send-button">Send</button>
       </form>
-    </div>
+      </div>
+
+      
+        <h1>Locate Us Here</h1>
+        <MyGoogleMap/>
+
+      </div>
+     
+    
   );
 };
 
