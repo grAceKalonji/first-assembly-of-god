@@ -2,6 +2,8 @@ import React, {useState, useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link as ScrollLink } from 'react-scroll';
+import { Button } from './Button';
+
 import "./navbar.css";
 
 function Navbar() {
@@ -34,7 +36,7 @@ function Navbar() {
     <nav className="navbar">
         <div className= "navbar-container">
              <Link to = "/" className= "navbar-logo">
-            First Assembly of God
+            Logo Here
              </Link>
              <div className= "Menu-Icon" onClick = {handleClick}>
              <FontAwesomeIcon className = {click ? "fa-sharp fa-solid fa-bars" : "fa-sharp fa-solid fa-xmark"} />
@@ -69,7 +71,7 @@ function Navbar() {
              </li>
              </ul>
              <Link to= "/ContactUs">
-             {button && <button className="btn btn--outline"> Contact Us </button>}
+             {button && <button className="btn btn--outline btn--large"> Contact Us </button>}
              </Link>
         </div>
     </nav>

@@ -34,10 +34,31 @@ video {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+.card__divide1{
+    position: relative;
+    display: flex;
+    flex-flow: row;
+   margin-bottom: 10%;
+    gap: 30%;
+  }
+
+  .card__divide__info-card1 {
+    width: 50%;
+    position: relative;
+    background-color: #f0ecec;
+    border-radius: 20px;
+  }
+
+h5 {
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+}
 
 @media screen and (max-width: 760px) {
     .hero-container >h1 {
         font-size: 45px;
+        color: #fff;
         margin-top: -70px;
     }
 

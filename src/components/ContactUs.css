@@ -60,6 +60,9 @@
     cursor: pointer;
   }
   
+  .padd{
+    padding-top: 24px;
+  }
   .send-button:hover {
     background-color: #0056b3;
   }

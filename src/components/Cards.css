@@ -144,6 +144,7 @@
 
   .card__divide__info-card {
     width:545px;
+    position: relative;
     background-color: #f0ecec;
     border-radius: 20px;
   }

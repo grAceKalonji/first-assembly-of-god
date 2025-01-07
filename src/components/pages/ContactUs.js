@@ -2,7 +2,7 @@ import React, { useState }  from 'react'
 import "../ContactUs.css"
 import emailjs from 'emailjs-com';
 import MyGoogleMap from './googlePin';
-
+import Quote from '../Quote';
 
 function ContactUs() {   
 
@@ -67,10 +67,10 @@ function ContactUs() {
       </form>
       </div>
 
-      
+        <div className= 'padd'></div>
         <h1>Locate Us Here</h1>
         <MyGoogleMap/>
-
+        <Quote/>
       </div>
      
     
