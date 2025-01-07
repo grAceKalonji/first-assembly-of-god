@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./aboutUs.css"
 import ReactMarkdown from 'react-markdown'
-import { faBold } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function AboutUsSection() {

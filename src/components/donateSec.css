@@ -1,45 +1,40 @@
-.donate-section {
-    background-color: #ffffff;
-  padding: 2rem;
+.donateContainer {
+background-color: #fff;
+padding-bottom: 2rem;
   text-align: center;
-  
-  min-height: 100vh;
-  width: 100%;
   position: relative;
 }
 
 .donate-content {
-  margin-top: 1rem;
+  margin-left: 10rem;
+  
   background-color: #ffffff;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .donate-link {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #091117;
+  background-color: #003f92;
   color: white;
   text-decoration: none;
   border-radius: 4px;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  max-width: 230px;
 }
 
 .donate-link:hover {
-  background-color: #0f161b;
+  background-color: #178de1;
 } 
 
 .paypal-image{
-  background-image: url('./images/PayPal.svg.png');
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  margin-bottom: 1rem;
-}
-
-.donate-section h1{
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  background-color: #ffffff;
+  background-image: url('../../public/images/PayPal.png');
+  background-size: contain;
+  height: 70px;
+  width: 250px;
+  background-repeat: no-repeat;
+  
 }
