@@ -1,5 +1,6 @@
 .cards {
     padding: 4rem;
+    padding-bottom: 0;
     background: #fff;
   }
 
@@ -125,10 +126,11 @@
     flex: 1;
     background-image: url('/public/images/img-1.jpg'); /* Use the path to your image */
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 400px; /* Adjust based on your design */
-    margin-right: 70px;
-    margin-left: 70px; 
+    margin-right: 1vh;
+    margin-left: 1vh; 
     border-radius: 8px; /* Optional: smooth corners */
     align-content: center;
   }
@@ -136,9 +138,10 @@
   .card__divide{
     position: relative;
     display: flex;
-    flex-flow: row;
-    margin-left: 90px;
-    margin-right: 90px;
+    flex-flow: row wrap;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    justify-content: center; 
     gap: 30px;
   }
 
@@ -166,4 +169,22 @@
       margin-bottom: 2rem;
     }
   }
+
+  @media screen and (max-width: 1024px) {
+
+    .card__divide{
+        gap: 4rem;  /* Further reduce gap on smaller screens */
+    }
+
+    .cards__container{
+      padding-top: 1rem;
+    }
+
+    .cards {
+      padding: 1rem;
+      padding-bottom: 0;
+      background: #fff;
+    }
+   
+}
 

@@ -8,6 +8,7 @@ function ContactUs() {
 
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [Name, setName] = useState('');
   
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -40,10 +41,17 @@ function ContactUs() {
       
       <div className= "columnContainer">
 
-      <div className='card__info-card'>
-        <p> Have questions or need prayer? We’re here for you! Reach out to connect, share your needs, or learn more about our church. Together, we can grow in faith and make a difference.</p>
-      </div>
+      
       <form onSubmit={handleSubmit} className="contact-form">
+      <label htmlFor="Name">Name:</label>
+        <input
+          type="text"
+          id="Name"
+          value={Name}
+          onChange={(e) => setName(e.target.value)}
+          required
+          placeholder="Your Name here"
+        />
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -65,6 +73,10 @@ function ContactUs() {
 
         <button type="submit" className="send-button">Send</button>
       </form>
+      <div className='card__info-card'>
+      <h2>How can we help? </h2>
+        <p> Have questions or need prayer? We’re here for you! Reach out to connect, share your needs, or learn more about our church. Together, we can grow in faith and make a difference.</p>
+      </div>
       </div>
 
         <div className= 'padd'></div>

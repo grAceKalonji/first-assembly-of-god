@@ -37,9 +37,11 @@ video {
 .card__divide1{
     position: relative;
     display: flex;
-    flex-flow: row;
-   margin-bottom: 10%;
-    gap: 30%;
+    flex-flow: row wrap;
+    margin-bottom: 10%;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center; 
   }
 
   .card__divide__info-card1 {
@@ -65,14 +67,25 @@ h5 {
     .hero-container >p{
         font-size: 30px;
     }
+}
 
-    .btn-mobile {
-        display: block;
-        text-decoration: none;
-    }
+@media screen and (max-width: 1024px) {
 
-    .btn {
-        width: 100%;
+    .card_divide {
+        gap: 2rem;  /* Further reduce gap on smaller screens */
     }
+    .hero-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .card__divide1{
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 10%;
+        gap: 11vh;
+        align-items: center;
+        justify-content: center; 
+      }
 }
 

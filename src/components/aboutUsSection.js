@@ -1,11 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./aboutUs.css"
 import ReactMarkdown from 'react-markdown'
+import image1 from '../img-1.jpg';
+import image2 from '../img-2.jpg';
+import image3 from '../img-8.jpg';
 
+// all ive got to do is add the images to the images array and then add the image paths to the images array maybe aso play around with sideimage styling in order to get th edimentions right 
 
 
 function AboutUsSection() {
   const [isExpanded, setIsExpanded] = useState(false);
+
+  // Add new state for image slideshow
+  const images = [
+    image1,
+    image2,
+    image3
+    // Add your image paths here
+  ];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   // Full content of the About Us section
   const fullText = `
@@ -58,7 +81,7 @@ Except for weather-related cancellations, the church has not cancelled services,
       <p>
         <ReactMarkdown>{displayedText}</ReactMarkdown>
         {fullText.length > maxLength && (
-        <button onClick={toggleExpanded} style={{ color: 'blue', cursor: 'pointer', border: 'none', background: 'none'}}>
+        <button onClick={toggleExpanded} style={{ color: 'blue', cursor: 'pointer', border: 'none', background: 'none', fontSize: 20,}}>
           {isExpanded ? 'See Less' : 'See More'}
         </button>
       )}
@@ -66,7 +89,11 @@ Except for weather-related cancellations, the church has not cancelled services,
       
      
       </div> 
-      <div className= "sideImage">
+      <div className= "sideImage" 
+        style={{
+          backgroundImage: `url(${images[currentImageIndex]})`,
+          transition: 'background-image 0.5s ease-in-out'
+        }}>
       </div>
     </div>
     </div>

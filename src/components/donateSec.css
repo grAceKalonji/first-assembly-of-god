@@ -6,7 +6,7 @@ padding-bottom: 2rem;
 }
 
 .donate-content {
-  margin-left: 10rem;
+  margin-left: 1vh;
   
   background-color: #ffffff;
   position: relative;
@@ -18,7 +18,7 @@ padding-bottom: 2rem;
 .donate-link {
   display: inline-block;
   padding: 12px 24px;
-  background-color: #003f92;
+  background-color: #000000;
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -26,8 +26,40 @@ padding-bottom: 2rem;
   max-width: 230px;
 }
 
+.donate-link-Y{
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  max-width: 230px;
+  align-content: center;
+}
+
+.donate-link-F{
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  max-width: 230px;
+  align-items: center;
+}
+
 .donate-link:hover {
   background-color: #178de1;
+} 
+
+.donate-link-Y:hover {
+  background-color: #db0000;
+} 
+
+.donate-link-F:hover {
+  background-color: #147ae0;
 } 
 
 .paypal-image{
@@ -36,5 +68,45 @@ padding-bottom: 2rem;
   height: 70px;
   width: 250px;
   background-repeat: no-repeat;
+  margin: 0 auto;
   
+}
+
+.card_divide{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10rem;
+    padding: 1rem;
+    justify-content: center; 
+
+}
+
+.youtubeImage{
+  background-image: url('../../public/images/YouTube_Logo.png');
+  background-size: contain;
+  height: 70px;
+  width: 250px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.facebookImage{
+  background-image: url('../../public/images/facebookLogo.png');
+  background-size: contain;
+  height: 70px;
+  width: 80px;
+  background-repeat: no-repeat;
+  align-content: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .donate-content {
+        margin-left: 0;  /* Remove left margin on smaller screens */
+    }
+    
+    .card_divide {
+        gap: 4rem;  /* Further reduce gap on smaller screens */
+    }
 }

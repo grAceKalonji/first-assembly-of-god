@@ -2,7 +2,6 @@
     display: flex; /* Enables flex layout for children */
     align-items: flex-start; /* Aligns items at the top */
     gap: 20px; /* Adds space between the elements */
-    
     align-items: center;
     padding-left: 80px;
 }
@@ -36,7 +35,7 @@ h3 {
     background-color: #ffffff;
   }
   .backgroundcontainer{
-    z-index: 3;
+    z-index: 10;
     background-color: #693030;
     padding-left: 80px;
     margin-right: 80px;
@@ -44,15 +43,56 @@ h3 {
   }
   .sideImage{
     flex: 1;
-    background-image: url('/public/images/img-1.jpg'); /* Use the path to your image */
     max-width: 30%;
     background-size: cover;
     background-position: center;
-    height: 100px; 
+    height: 350px; 
     border-radius: 8px; 
     align-content: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
   }
   .card-items{
     max-width: 60%;
     flex: 1;
   }
+
+  @media screen and (max-width: 1024px) {
+    .aboutUsContainer {
+        flex: 1;
+        flex-direction: column-reverse;  /* Stack items vertically, image first */
+        padding-left: 0vh;  /* Reduce padding for smaller screens */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sideImage{
+        min-width: 80%;  
+        min-height: 350px;    
+        margin-bottom: 10px;
+        border-radius: 8px; 
+        margin-left: 1vh;
+        margin-right: 1vh;
+        align-content: center;
+        background-image: url('../../public/images/PayPal.png');
+        background-repeat: no-repeat;
+        transition: background-image 0.5s ease-in-out;
+    } 
+
+    .card-items {
+        max-width: 100%;  /* Allow text content to take full width */
+        padding: 0 1vh;  /* Add some padding on the sides */
+    }
+
+    .backgroundcontainer {
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+/* Optional: Add additional breakpoint for even smaller screens */
+@media screen and (max-width: 768px) {
+    .sideImage {
+        height: 200px;  /* Further reduce height on mobile if needed */
+    }
+}

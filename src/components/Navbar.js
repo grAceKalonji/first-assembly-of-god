@@ -36,9 +36,10 @@ function Navbar() {
     <nav className="navbar">
         <div className= "navbar-container">
              <Link to = "/" className= "navbar-logo">
-            Logo Here
+            <div className = "FAGLogo"></div>
              </Link>
-             <div className= "Menu-Icon" onClick = {handleClick}>
+             
+             <div className= "menu-icon" onClick = {handleClick}>
              <FontAwesomeIcon className = {click ? "fa-sharp fa-solid fa-bars" : "fa-sharp fa-solid fa-xmark"} />
              </div>
              <ul className = {click ? "nav-menu active" : "nav-menu"}>

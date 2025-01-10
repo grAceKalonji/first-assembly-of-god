@@ -66,3 +66,23 @@
   .send-button:hover {
     background-color: #0056b3;
   }
+
+  @media screen and (max-width: 1024px) {
+    .columnContainer {
+      flex: 1;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .card__info-card {
+      max-width:50vh;
+      align-content: center;
+      background-color: #f0ecec;
+      border-radius: 20px;
+      padding: 15px;
+    }
+  
+  }
