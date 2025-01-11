@@ -173,7 +173,7 @@
   @media screen and (max-width: 1024px) {
 
     .card__divide{
-        gap: 4rem;  /* Further reduce gap on smaller screens */
+        gap: 2rem;  /* Further reduce gap on smaller screens */
     }
 
     .cards__container{

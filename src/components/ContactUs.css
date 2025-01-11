@@ -2,26 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
+    flex: 1;
   }
 
 .contact-form {
     display: flex;
+    flex: 1;
     flex-direction: column;
-    width: 250%;
-    max-width: 400px;
+    width: 100%;
   }
 
 .columnContainer{
   position: relative;
   display: flex;
   flex-flow: row;
-  margin-left: 90px;
-  margin-right: 90px;
   gap: 30px;
 }
 
 .card__info-card {
-  width:545px;
+  max-width:50vh;
   align-content: center;
   background-color: #f0ecec;
   border-radius: 20px;
@@ -38,7 +38,7 @@
   
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 50vh;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
@@ -58,10 +58,13 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    justify-content: center;
   }
   
   .padd{
     padding-top: 24px;
+    justify-content: center;
   }
   .send-button:hover {
     background-color: #0056b3;
@@ -84,5 +87,27 @@
       border-radius: 20px;
       padding: 15px;
     }
-  
+
+    .contact-form {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      max-width: 400px;
+      margin-left: 3vh;
+      margin-right: 3vh;
+    }
+
+ 
+
+  .contact-form input,
+  .contact-form textarea {
+    display: flex;
+    flex: 1;
+    width: 50vh;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
   }

@@ -34,11 +34,13 @@ h3 {
   .generalContainer{
     background-color: #ffffff;
   }
-  .backgroundcontainer{
+  .background{
     z-index: 10;
-    background-color: #693030;
-    padding-left: 80px;
-    margin-right: 80px;
+    background-color: #f3f3f3;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    padding-top: 4vh;
+    padding-bottom: 5vh;
     border-radius: 16px;
   }
   .sideImage{
@@ -87,6 +89,16 @@ h3 {
     .backgroundcontainer {
         padding-left: 20px;
         margin-right: 20px;
+    }
+
+    .background{
+      z-index: 10;
+      background-color: #f3f3f3;
+      margin-left: 2vh;
+      margin-right: 2vh;
+      padding-top: 4vh;
+      padding-bottom: 5vh;
+      border-radius: 16px;
     }
 }
 

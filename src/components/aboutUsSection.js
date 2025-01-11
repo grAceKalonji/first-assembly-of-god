@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import image1 from '../img-1.jpg';
 import image2 from '../img-2.jpg';
 import image3 from '../img-8.jpg';
+import { faUnderline } from '@fortawesome/free-solid-svg-icons';
 
 // all ive got to do is add the images to the images array and then add the image paths to the images array maybe aso play around with sideimage styling in order to get th edimentions right 
 
@@ -69,9 +70,9 @@ Except for weather-related cancellations, the church has not cancelled services,
 
   return (
     <div className ='generalContainer'>
+    <div className = 'background'>
     <section id="AboutUs">
     
-    <div classname = 'backgroundcontainer'>
     <div className ="megacontainer">
     <h4>Learn about Us</h4>
     <div className="aboutUsContainer">
@@ -81,7 +82,7 @@ Except for weather-related cancellations, the church has not cancelled services,
       <p>
         <ReactMarkdown>{displayedText}</ReactMarkdown>
         {fullText.length > maxLength && (
-        <button onClick={toggleExpanded} style={{ color: 'blue', cursor: 'pointer', border: 'none', background: 'none', fontSize: 20,}}>
+        <button onClick={toggleExpanded} style={{ color: 'blue', cursor: 'pointer', border: 'none', background: 'none', fontSize: 20}}>
           {isExpanded ? 'See Less' : 'See More'}
         </button>
       )}
@@ -97,9 +98,9 @@ Except for weather-related cancellations, the church has not cancelled services,
       </div>
     </div>
     </div>
-    </div>
     
     </section>
+    </div>
     </div>
   );
 }

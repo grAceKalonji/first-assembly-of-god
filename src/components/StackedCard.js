@@ -5,6 +5,7 @@ import "./StackedCard.css";
 function StackedCard() {
   return (
     <div className='backGround'>
+
     <div> 
     <h3> More about us </h3>
     </div>
@@ -23,7 +24,7 @@ function StackedCard() {
         <h1>Pastor Billa</h1>
         <p>We all crave adventure, relationships, and meaning. Whether you’re looking for a place to ask your questions or practical ways to transform your relationships, come explore with us. Vehicles with a sale date of “Upcoming Lot” have NOT been assigned to an auction and are NOT eligible for bidding yet. Add this vehicle to your Watchlist and Copart will let you know when a sale date is assigned and when you can start bidding.</p>
         </div>
-        <div className= "StackedCard-image-1">     
+        <div className= "StackedCard-image-2">     
         </div>
     </div>
     

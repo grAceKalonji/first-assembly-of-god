@@ -31,12 +31,13 @@ h3 {
 
 .StackedCard-image-1{
   flex: 1;
-  background-image: url('/public/images/img-8.jpg'); /* Use the path to your image */
-  background-size: cover;
+  background-image: url('/public/images/pAbraham.JPG'); /* Use the path to your image */
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
-  width: 600px;
-  height: 300px; /* Adjust based on your design */
-  margin-right: 90px; /* Overlays the image */
+  width: 40vh;
+  height: 65vh; /* Adjust based on your design */
+  margin-right: 140px; /* Overlays the image */
   margin-left: -100px;
   border-radius: 8px; /* Optional: smooth corners */
 }

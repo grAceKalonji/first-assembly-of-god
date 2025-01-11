@@ -12,9 +12,20 @@ function Navbar() {
   const handleClick = () => setClick(!click); 
   const closeMobileMenu = () => setClick(false);
   const [button, setButton] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 961); // Adjust the width as needed
+  };
 
+  useEffect(() => {
+    handleResize(); // Check on mount
+    window.addEventListener('resize', handleResize); // Add event listener
 
+    return () => {
+      window.removeEventListener('resize', handleResize); // Cleanup
+    };
+  }, []);
 
   const showButton = () => {
     if(window.innerWidth <=960) {
@@ -69,7 +80,14 @@ function Navbar() {
         >
           About Us
         </ScrollLink>
-             </li>
+        </li>
+          {isMobile && (
+            <li className = "nav-item">
+              <Link to="/ContactUs" className="nav-links" onClick={closeMobileMenu}>
+                Contact Us
+              </Link>
+            </li>
+          )}
              </ul>
              <Link to= "/ContactUs">
              {button && <button className="btn btn--outline btn--large"> Contact Us </button>}

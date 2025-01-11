@@ -82,6 +82,7 @@ function ContactUs() {
         <div className= 'padd'></div>
         <h1>Locate Us Here</h1>
         <MyGoogleMap/>
+        
         <Quote/>
       </div>
      
