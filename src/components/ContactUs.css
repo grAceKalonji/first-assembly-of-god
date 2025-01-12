@@ -4,6 +4,10 @@
     align-items: center;
     display: flex;
     flex: 1;
+    background-image: url('/public/images/contactPage.JPEG');
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   }
 
 .contact-form {

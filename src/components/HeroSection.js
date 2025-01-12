@@ -38,15 +38,16 @@ function HeroSection() {
       <div classname = 'card__divide__info-card1'>
       <h5 dangerouslySetInnerHTML={{ __html: videos[currentVideoIndex].text }} />
       {currentVideoIndex === 1 && (
-        <p className="video-description">
-        This is the description for the second video.
+        <p className="video-description" style={{ textAlign: 'center' }}>
         “Sow for yourselves<br /> righteousness; Reap in mercy; Break up your fallow ground, 
         For<br />  it is time to seek the LORD, Till He comes and rains righteousness<br />  
         on you.”<br /> Hosea 10:19 </p>
       )}
       </div>
-      </div>
       <button className="toggle-button" onClick={toggleVideo}>Next</button>
+
+      </div>
+      
     </div>
   )
 }

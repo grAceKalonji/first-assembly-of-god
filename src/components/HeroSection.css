@@ -26,13 +26,7 @@ video {
 
 }
 
-.hero-container >p {
-    color: #fff;
-    font-size: 40px;
-    margin-top: 8px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-}
 .card__divide1{
     position: relative;
     display: flex;
@@ -44,13 +38,18 @@ video {
   }
 
   .card__divide__info-card1 {
-    width: 50%;
     position: relative;
-    background-color: #f0ecec;
-    border-radius: 20px;
     justify-content: center;
   }
+
   .toggle-button{
+    background: rgba( 255, 255, 255, 0.30 );
+box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     width: 10vh;
     height: 10vh;
     border-radius: 100px;
@@ -61,19 +60,20 @@ video {
 
   .toggle-button:hover{
     cursor: pointer;
-    background-color: rgb(0, 0, 0);
     width: 10vh;
     height: 10vh;
     border-radius: 100px;
     border: none;
-  }
-  .toggle-button:hover{
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.47);
   }
+ 
 
-  .video-description{
-    justify-content: center;
-    align-content: center;
+  .video-description {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
   }
 
 h5 {
@@ -120,9 +120,47 @@ h5 {
         display: flex;
         flex-flow: row wrap;
         margin-bottom: 10%;
-        gap: 11vh;
+        gap: 10vh;
+        column-gap: 0;
         align-items: center;
         justify-content: center; 
       }
+      
+      .toggle-button{
+        background: rgba( 255, 255, 255, 0.30 );
+         box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+        backdrop-filter: blur( 20px );
+         -webkit-backdrop-filter: blur( 20px );
+        border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+        width: 10vh;
+        height: 10vh;
+        border-radius: 100px;
+        border: none;
+        position: absolute;
+        margin-top: 62vh;
+      }
+
+      h5 {
+        color: #fff;
+        font-size: 10vh;
+        text-align: center;
+        margin-bottom: 18vh;
+    }
+
+      .hero-container p{
+        color: #fff;
+        display:flex;
+        font-size:larger;
+        font-weight: bold;
+        justify-content: center;
+        align-content: center;
+        text-align: justify;
+        padding-bottom: 33vh;
+    }
+
+
+
 }
 

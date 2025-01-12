@@ -79,8 +79,19 @@ function Navbar() {
           onClick={closeMobileMenu}
         >
           About Us
-        </ScrollLink>
-        </li>
+          </ScrollLink>
+             </li>
+             <li className = "nav-item">
+             <a
+               href="https://www.paypal.com"
+               className="nav-links"
+               onClick={closeMobileMenu}
+               target="_blank"
+               rel="noopener noreferrer"
+             >
+               PayPal
+             </a>
+             </li>
           {isMobile && (
             <li className = "nav-item">
               <Link to="/ContactUs" className="nav-links" onClick={closeMobileMenu}>

@@ -30,29 +30,27 @@ h3 {
 }
 
 .StackedCard-image-1{
-  flex: 1;
   background-image: url('/public/images/pAbraham.JPG'); /* Use the path to your image */
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 40vh;
-  height: 65vh; /* Adjust based on your design */
+  width: 50vh;
+  height: 50vh; /* Adjust based on your design */
   margin-right: 140px; /* Overlays the image */
   margin-left: -100px;
   border-radius: 8px; /* Optional: smooth corners */
 }
 
 .StackedCard-image-2{
-  flex: 1;
-  background-image: url('/public/images/img-8.jpg'); /* Use the path to your image */
+  background-image: url('/public/images/pBilla.jpg'); /* Use the path to your image */
   background-size: cover;
   background-position: center;
-  width: 600px;
-  height: 300px; /* Adjust based on your design */
+  background-repeat: no-repeat;
+  width: 50vh;
+  height: 50vh; /* Adjust based on your design */
   margin-right: 200px; /* Overlays the image */
-  margin-left: 200px;
+  margin-left: -100px;
   border-radius: 8px; /* Optional: smooth corners */
-
 }
 
 .InformationCard{
@@ -177,6 +175,10 @@ h3 {
     position: relative;
   }
 
-    
+
+  /* potential upgrade */
+
+  
+
 }
 

@@ -21,10 +21,10 @@
     padding-top: 36px;
   }
 
-  h3 {
+  .cards h3 {
     text-align: center;
     padding-bottom: 46px;
-    font-size: 46px;
+    font-size: 60px;
   }
   
   .card__divide p{
@@ -133,6 +133,7 @@
     margin-left: 1vh; 
     border-radius: 8px; /* Optional: smooth corners */
     align-content: center;
+    margin-bottom: 6vh;
   }
 
   .card__divide{
@@ -142,15 +143,62 @@
     margin-left: 1vh;
     margin-right: 1vh;
     justify-content: center; 
-    gap: 30px;
+    gap: 0px;
+    margin-bottom: 3vh;
+  }
+  .card__divide1{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-bottom: 0;
+    justify-content: center; 
+    gap: 0px;
   }
 
-  .card__divide__info-card {
-    width:545px;
+  .card__divide__info-cardL {
+    width:55vh;
+    height: 35vh;
     position: relative;
-    background-color: #f0ecec;
-    border-radius: 20px;
+    background-color: #fff;
+    border-radius: 8px 0px 0px 8px;
+    border-width: 1px;
+    border-color:#252e4833;
+    border-style: solid;
   }
+
+  .card__divide__info-cardR {
+    width:55vh;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0px 8px 8px 0px;
+    border-width: 1px;
+    border-color:#252e4833;
+    border-style: solid;
+    height: 35vh;
+    padding-left: 2vh;
+  }
+  .card__divide__imageL{
+    width:55vh;
+    height: 35vh;
+    background-image: url('/public/images/scheduledService.jpg');
+    border-radius: 8px 0px 0px 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 80%;
+  }
+
+  .card__divide__imageR{
+    width:55vh;
+    height: 35vh;
+    background-image: url('/public/images/locationImage.jpg');
+    border-radius: 0px 8px 8px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 60%;
+  }
+
   
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
@@ -172,9 +220,6 @@
 
   @media screen and (max-width: 1024px) {
 
-    .card__divide{
-        gap: 2rem;  /* Further reduce gap on smaller screens */
-    }
 
     .cards__container{
       padding-top: 1rem;

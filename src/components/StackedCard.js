@@ -27,7 +27,8 @@ function StackedCard() {
         <div className= "StackedCard-image-2">     
         </div>
     </div>
-    
+
+
 
     </div>
   )
