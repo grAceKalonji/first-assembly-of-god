@@ -33,10 +33,10 @@
   }
 
   .FAGLogo{
-    background-image: url('../../public/images/churchLogoWhite.png');
-    min-width: 5vh;
-    min-height: 5vh;
-    z-index: 101;
+
+    max-width: 12vh;
+    max-height: 12vh;
+
   }
   
   .fa-typo3 {
@@ -84,8 +84,9 @@
   
   .menu-icon {
    display: none;
-   min-width: 5vh;
-   min-height: 5vh;
+   min-width: 0vh;
+   min-height: 0vh;
+   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   
   @media screen and (max-width: 960px) {
@@ -137,7 +138,6 @@
     }
   
     .menu-icon {
-      background-color: #fff;
       display: block;
       position: absolute;
       top: 0;

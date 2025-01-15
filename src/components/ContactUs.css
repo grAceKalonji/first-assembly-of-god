@@ -1,13 +1,19 @@
 .ContactUsContainer {
-    display: flex;
+    
     flex-direction: column;
     align-items: center;
     display: flex;
     flex: 1;
-    background-image: url('/public/images/contactPage.JPEG');
-    background-size: cover;
+background-color: white;
+    background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 0px;
+  }
+
+  .ContactUsContainer h1 { 
+    font-size: 7vh;
+    padding-bottom: 2vh;
   }
 
 .contact-form {
@@ -15,6 +21,7 @@
     flex: 1;
     flex-direction: column;
     width: 100%;
+
   }
 
 .columnContainer{
@@ -30,6 +37,17 @@
   background-color: #f0ecec;
   border-radius: 20px;
   padding: 8px;
+  margin-bottom: 3vh;
+}
+
+.card__info-card h2 {
+  padding: 1vh;
+}
+
+.card__info-card p {
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  padding-bottom: 1.5vh;
 }
 
 .contentContainer{
@@ -64,6 +82,14 @@
     cursor: pointer;
     width: 100%;
     justify-content: center;
+  }
+
+  .cLogoImage{
+    background-image: url('../../public/images/churchLogoBlack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60vh;
+    height: 60vh;
   }
   
   .padd{

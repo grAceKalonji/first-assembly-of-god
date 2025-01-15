@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link as ScrollLink } from 'react-scroll';
 import { Button } from './Button';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import myImage from '../images/churchLogoWhite.png';
 
 import "./navbar.css";
 
@@ -47,11 +49,11 @@ function Navbar() {
     <nav className="navbar">
         <div className= "navbar-container">
              <Link to = "/" className= "navbar-logo">
-            <div className = "FAGLogo"></div>
+             <img src={myImage} alt="Logo" className='FAGLogo'/>
              </Link>
              
              <div className= "menu-icon" onClick = {handleClick}>
-             <FontAwesomeIcon className = {click ? "fa-sharp fa-solid fa-bars" : "fa-sharp fa-solid fa-xmark"} />
+             <FontAwesomeIcon icon = {click ? faXmark : faBars} />
              </div>
              <ul className = {click ? "nav-menu active" : "nav-menu"}>
              <li className = "nav-item">

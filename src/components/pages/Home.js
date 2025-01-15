@@ -7,6 +7,7 @@ import Quote from '../Quote';
 import AboutUsSection from "../aboutUsSection";
 import DonateSec from '../donateSec';
 
+
 function Home() {
   return (
     <>

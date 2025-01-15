@@ -34,25 +34,28 @@ function AboutUsSection() {
   // Full content of the About Us section
   const fullText = `
 ## Our Missions
-(2024)\n
-Rocco Di Trolio - Argentina \n
-Stephen Ford - Peru \n
+We are priveledged to support a number of ministries, missionaries, and outreach programs that share the love of Christ and spread His message locally and globally, namely:\n
+ Rocco Di Trolio - Argentina \n
+ Stephen Ford - Peru \n
 Jason & Lindsey Goldsberry - Chile \n
 
-## History
-First Assembly of God: A Legacy of Faith.It was in divine love and wisdom that First Assembly of God was established to touch many generations in the city of Portland, the largest in the state of Maine.\n
-Probably, the founder of the First Assembly of God, 243 Cumberland Ave, Portland, knew little about what the future of the church would be when it was started in 1908. This is when the Lord gave a burden to Rev Aurther Chase to reach people for Christ starting with 12 persons in attendance at the first gathering.\n
-
-## A Humble Beginning
-It was on a Sunday afternoon, at a rented space at the Swedish Baptist Church on Wilmot Street in Portland, that a soon-to-be vibrant congregation began and has spanned many generations.\n
-The church was formed under the name of Apostolic Faith Assembly, which in later years went through several name changes. The dramatic growth of the church resulted in the permanance of the current location at 243 Cumberland Ave., with the purchasing of a house and a barn from Rev. Payson in 1917.\n
-
-The current sanctuary was built and dedicated to the worship of the Lord on Sept. 8, 1918. Rev. Smith remained the shepherd of this congregation until his promotion to Glory in 1925. Rev. James Hicks, the next pastor of this congregation, changed the name to Hephzibah Pentecostal Church. For 20 years, the congregation experienced continued growth under the ministry of Rev. Hicks, including a Bible school and tent ministry. Following his promotion to Glory in 1945, Rev. L Bernard Hinman became the pastor of this congregation and changed the name to First Assembly of God. His faithful service lasted 55 years until his promotion to Glory in Sept. 2000.\n
-
-## Looking to the Future
-Rev. Paul E Johnson, a graduate of Hephzibah Bible School and the son-in-law of Rev. Hicks, became the interim pastor until Rev. M.S. Abraham became the pastor.\n
-Except for weather-related cancellations, the church has not cancelled services, nor closed or moved since 1918—a unique feature of First Assembly of God. If Christ tarries, we trust God would use this church to impact many more generations to come.\n
-
+## First Assembly of God: A Legacy of Faith
+First Assembly of God in Portland, Maine, has a rich legacy of faith that spans 
+generations. \n 
+Established in 1908 by Rev. Arthur Chase with just 12 attendees at 
+its first gathering, the church began humbly in a rented space at the Swedish Baptist 
+Church on Wilmot Street. Initially named Apostolic Faith Assembly, the church experienced 
+remarkable growth, leading to the purchase of a house and barn at its current location, 
+243 Cumberland Avenue, in 1917. \n 
+The sanctuary was dedicated in 1918, and over the decades, 
+the church underwent several name changes under the leadership of pastors like Rev. James 
+Hicks, who renamed it Hephzibah Pentecostal Church, and Rev. L. Bernard Hinman, who 
+renamed it First Assembly of God and led for 55 years until 2000.\n
+ Despite challenges, 
+including weather-related disruptions, the church has never closed its doors since 1918. 
+Rooted in a strong foundation of ministry, including a Bible school and tent ministry,
+ First Assembly of God remains steadfast in its mission to impact future generations for 
+ Christ.
 
 `;
 
