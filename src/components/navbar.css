@@ -8,16 +8,15 @@
     position: sticky;
     top: 0;
     z-index: 999;
-
   }
   
-  .navbar-container {
+.navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     max-width: 1500px;
-  }
+}
   
   .navbar-logo {
     justify-self: start;
@@ -33,10 +32,8 @@
   }
 
   .FAGLogo{
-
     max-width: 12vh;
     max-height: 12vh;
-
   }
   
   .fa-typo3 {

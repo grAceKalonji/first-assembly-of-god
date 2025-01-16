@@ -1,0 +1,124 @@
+.AccomplishmentsContainer{
+    background-color: #fff;
+}
+
+.aboutUsContainerAcc{
+    display: flex; /* Enables flex layout for children */
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Adds space between the elements */
+    align-items: center;
+    padding-left: 70px;
+    height: 50vh;
+}
+h3 {
+    text-align: center;
+    padding-bottom: 46px;
+    font-size: 46px;
+  }
+ h1 {
+    text-align: center;
+    padding-bottom: 0px;
+    font-size: 46px;
+  }
+  h4 {
+    text-align: center;
+    padding-bottom: 16px;
+    font-size: 56px;
+  }
+
+.aboutUsContainerAcc p {
+  text-align: center;
+}
+  .megacontainerAcc{
+    flex-direction: column;
+    display: flex;
+    flex-flow: column;
+    
+  }
+
+  .generalContainerAcc{
+    background-color: #ffffff;
+  }
+  .backgroundAcc{
+    z-index: 10;
+    height: 80vh;
+    background-color: #f3f3f3;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 4.5vh;
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+    border-radius: 16px;
+  }
+  .sideImageAcc{
+    flex: 1;
+    max-width: 45%;
+    background-size: cover;
+    background-position: center;
+    height: 350px; 
+    border-radius: 8px; 
+    align-content: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s ease-in-out;
+  }
+
+  .card-itemsAcc{
+    max-width: 50%;
+    flex: 1;
+    height: 60vh;
+  }
+
+  .scrollable {
+    max-height: 300px; /* Set a maximum height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+  @media screen and (max-width: 1024px) {
+    .aboutUsContainerAcc {
+        flex: 1;
+        flex-direction: column-reverse;  /* Stack items vertically, image first */
+        padding-left: 0vh;  /* Reduce padding for smaller screens */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sideImageAcc{
+        min-width: 80%;  
+        min-height: 350px;    
+        margin-bottom: 10px;
+        border-radius: 8px; 
+        margin-left: 1vh;
+        margin-right: 1vh;
+        align-content: center;
+        background-image: url('../../public/images/PayPal.png');
+        background-repeat: no-repeat;
+        transition: background-image 0.5s ease-in-out;
+    } 
+
+    .card-itemsAcc {
+        max-width: 100%;  /* Allow text content to take full width */
+        padding: 0 1vh;  /* Add some padding on the sides */
+    }
+
+    .backgroundcontainerAcc {
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+
+    .backgroundAcc{
+      z-index: 10;
+      background-color: #f3f3f3;
+      margin-left: 2vh;
+      margin-right: 2vh;
+      padding-top: 4vh;
+      padding-bottom: 5vh;
+      border-radius: 16px;
+    }
+}
+
+/* Optional: Add additional breakpoint for even smaller screens */
+@media screen and (max-width: 768px) {
+    .sideImageAcc {
+        height: 200px;  /* Further reduce height on mobile if needed */
+    }
+}

@@ -16,7 +16,7 @@ function Quote() {
     const [fade, setFade] = useState(true);
 
     useEffect(() => {
-        const words = quotes[currentQuoteIndex].split(' '); // Split the current quote into words
+        const words = quotes[currentQuoteIndex].split(' '); // this will essentially Split the current quote into words
         const interval = setInterval(() => {
             setFade(false); // Start fade-out
 

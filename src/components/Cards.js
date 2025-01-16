@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Cards.css";
+import { Link } from 'react-router-dom';
 import { Button } from './Button';
 
 
@@ -39,14 +40,11 @@ function Cards() {
         to sharing God’s love through service.</p>
        </div>
        <div className='alignment'>
-        <a 
-          href="https://www.youtube.com/@christosekklessia" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="whiteBackDefaultButton"
-        >
-          Learn More
-        </a>
+       <Link to= "/Accomplishments" >
+         <div className='whiteBackDefaultButton'>
+         Learn More
+          </div>
+          </Link>
         </div>
         </div>
 

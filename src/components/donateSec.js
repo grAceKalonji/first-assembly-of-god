@@ -8,7 +8,7 @@ function DonateSec() {
     <div className="donateContainer">
       <h2>Support Our Cause</h2>
       <div className="donate-content">
-      <div className="card_divide">
+      <div className="card_divide5">
       <div>
       <div className="paypal-image">
       </div>
