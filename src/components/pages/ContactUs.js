@@ -44,7 +44,9 @@ function ContactUs() {
       <div style={{ justifyContent:'center'}}>
       <div className='card__info-card'>
       <h2>How can we help? </h2>
-        <p> Have questions or need prayer? We’re here for you! Reach out to connect, share your needs, or learn more about our church. Together, we can grow in faith and make a difference.</p>
+        <p> Have questions or need prayer? We’re here for you! Reach out to connect,
+        share your needs, or learn more about our church. Together,
+         we can grow in faith and make a difference.</p>
       </div>
       <form onSubmit={handleSubmit} className="contact-form">
       <label htmlFor="Name">Name:</label>
