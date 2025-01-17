@@ -6,6 +6,7 @@ import StackedCard from '../StackedCard';
 import Quote from '../Quote';
 import AboutUsSection from "../aboutUsSection";
 import DonateSec from '../donateSec';
+import BookCard from '../BookCard';
 
 
 
@@ -16,6 +17,8 @@ function Home() {
       <Cards/>
       <DonateSec/>
       <StackedCard/>
+      {/* <BookCard/> */}
+
       <AboutUsSection/>
       <Quote/>
       
