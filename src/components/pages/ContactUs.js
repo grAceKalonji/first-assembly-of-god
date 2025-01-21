@@ -82,7 +82,7 @@ function ContactUs() {
       
       </div>
       </div>
-
+      <MyGoogleMap/>
       <Quote/>
       </div>
      

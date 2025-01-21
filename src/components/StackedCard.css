@@ -7,13 +7,12 @@
     position: relative;
     padding-bottom: 20px;
     box-sizing: border-box;
-    padding-bottom: 80px;
+
   }
 
 
-h3 {
-  font-size: 45px;
-  font-weight: bold;
+.customHeading{
+  font-size: 56px;
 }
 
 .StackedCard-image{
@@ -37,8 +36,9 @@ h3 {
   width: 50vh;
   height: 50vh; /* Adjust based on your design */
   margin-right: 140px; /* Overlays the image */
-  margin-left: -100px;
+  margin-left: -60px;
   border-radius: 8px; /* Optional: smooth corners */
+
 }
 
 .StackedCard-image-2{
@@ -49,8 +49,9 @@ h3 {
   width: 50vh;
   height: 50vh; /* Adjust based on your design */
   margin-right: 200px; /* Overlays the image */
-  margin-left: -100px;
+  margin-left: -50px;
   border-radius: 8px; /* Optional: smooth corners */
+  
 }
 
 .InformationCard{
@@ -137,7 +138,7 @@ h3 {
       background-position: center;
       max-width: 80%;
       min-height: 300px; 
-      margin-right: 1vh; /* Overlays the image */
+      margin-right: 1vh; 
       margin-left: 1vh;
       border-radius: 8px; /* Optional: smooth corners */
   }
@@ -147,10 +148,25 @@ h3 {
       background-size: cover;
       background-position: center;
       max-width: 80%;
-      min-height: 300px; 
-      margin-right: 1vh; /* Overlays the image */
+      min-height: 330px; 
+      margin-right: 1vh; 
       margin-left: 1vh;
+      margin-bottom: -10px;
       border-radius: 8px; /* Optional: smooth corners */
+      z-index: 10;
+    }
+
+    .StackedCard-image-2{
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      max-width: 80%;
+      min-height: 330px; 
+      margin-right: 1vh; 
+      margin-left: 1vh;
+      margin-bottom: -10px;
+      border-radius: 8px; /* Optional: smooth corners */
+      z-index: 10;
     }
 
     .InformationCard{

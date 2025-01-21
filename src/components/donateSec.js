@@ -6,7 +6,7 @@ import "./Cards.css"
 function DonateSec() {
   return (
     <div className="donateContainer">
-      <h2>Support Our Cause</h2>
+      <h2>Want to help ??</h2>
       <div className="donate-content">
       <div className="card_divide5">
       <div>
@@ -42,7 +42,7 @@ function DonateSec() {
           rel="noopener noreferrer"
           className="donate-link-F"
         >
-          Follow us on Facebook
+          pray with us: Facebook
         </a>
         </div>
 

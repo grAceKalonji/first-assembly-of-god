@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import "./aboutUs.css"
 import ReactMarkdown from 'react-markdown'
-import image1 from '../img-1.jpg';
-import image2 from '../img-2.jpg';
-import image3 from '../img-8.jpg';
+import image1 from '../images/img-1.jpg';
+import image2 from '../images/img-2.jpg';
+import image3 from '../images/img-8.jpg';
 import { faUnderline } from '@fortawesome/free-solid-svg-icons';
 
 // all ive got to do is add the images to the images array and then add the image paths to the images array maybe aso play around with sideimage styling in order to get th edimentions right 
@@ -74,9 +74,10 @@ Rooted in a strong foundation of ministry, including a Bible school and tent min
   return (
     <div className ='generalContainer'>
     <div className = 'background'>
-    <section id="AboutUs">
     
+    <section id="AboutUs"></section>
     <div className ="megacontainer">
+    
     <h4>Learn about Us</h4>
     <div className="aboutUsContainer">
     
@@ -102,7 +103,6 @@ Rooted in a strong foundation of ministry, including a Bible school and tent min
     </div>
     </div>
     
-    </section>
     </div>
     </div>
   );

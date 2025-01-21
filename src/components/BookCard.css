@@ -1,3 +1,5 @@
+.book-card {
+
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,700,900,400italic,700italic,900italic|Playfair+Display:400,700,900,400italic,700italic,900italic|Rock+Salt:400);
 
 *,
@@ -5,10 +7,13 @@
 :after {
     box-sizing: border-box;
 }
-
+.bbackground{
+    background-color: white;
+    padding-bottom: 6vh;
+}
 body {
     background-color: #1d1f20;
-    color: #e5e5e5;
+    color: #000000; /* this is affecting the css globally */
     font: 16px/1.25 'Crimson Text', sans-serif;
     margin: 0;
 }
@@ -17,12 +22,13 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 80em;
+    display: block;
 }
 
 #container {
-    float: left;
     padding: 1em;
     width: 100%;
+    max-height: 100vh;
 }
 
 
@@ -365,7 +371,7 @@ body {
 }
 
 .chapter-image {
-    width: 100%;
+    width: 75%;
     height: auto;
     margin-bottom: 5px;
     display: block;
@@ -391,4 +397,5 @@ article::after {
     content: "";
     display: table;
     clear: both;
+}
 }

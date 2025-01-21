@@ -62,13 +62,12 @@ padding-bottom: 2rem;
 } 
 
 .paypal-image{
-  background-image: url('../../public/images/PayPal.png');
+  background-image: url('../../public/images/donation.png');
   background-size: contain;
-  height: 70px;
-  width: 250px;
+  height: 100px;
+  width: 100px;
   background-repeat: no-repeat;
   margin: 0 auto;
-  
 }
 
 .card_divide5{
@@ -82,23 +81,26 @@ padding-bottom: 2rem;
 }
 
 .youtubeImage{
-  background-image: url('../../public/images/YouTube_Logo.png');
+  background-image: url('../../public/images/bullhorn.png');
   background-size: contain;
-  height: 70px;
-  width: 250px;
+  height: 100px;
+  width: 100px;
   background-repeat: no-repeat;
   margin: 0 auto;
 }
 
 .facebookImage{
-  background-image: url('../../public/images/facebookLogo.png');
+  background-image: url('../../public/images/christianity.png');
   background-size: contain;
-  height: 70px;
-  width: 80px;
+  background-position: 0% 50%;
+  height: 100px;
+  width: 100px;
   background-repeat: no-repeat;
   align-content: center;
   margin: 0 auto;
+  
 }
+
 
 @media screen and (max-width: 1024px) {
     .donate-content {
@@ -108,4 +110,13 @@ padding-bottom: 2rem;
     .card_divide {
         gap: 4rem;  /* Further reduce gap on smaller screens */
     }
+
+    .card_divide5{
+      position: relative;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 4rem;
+      padding: 1rem;
+      justify-content: center;
+  }
 }

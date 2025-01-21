@@ -124,10 +124,10 @@
 
   .Church__image{
     flex: 1;
-    background-image: url('/public/images/communityImage.jpeg'); /* Use the path to your image */
+    background-image: url('/public/images/churchExterior.jpg'); /* Use the path to your image */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 45%;
+    background-position: 0% 30%;
     height: 400px; /* Adjust based on your design */
     margin-right: 1vh;
     margin-left: 1vh; 
@@ -177,7 +177,7 @@
 }
 
 .alignment{
-  margin-left: 20vh;
+  margin-left: 18vh;
 }
 
   .card__divide{
@@ -206,10 +206,11 @@
     height: 45vh;
     position: relative;
     background-color: #fff;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 0px 8px 8px 0px;
     border-width: 1px;
     border-color:#252e4833;
     border-style: solid;
+    
   }
 
   .card__divide__info-cardR {
@@ -236,11 +237,12 @@
   .card__divide__imageR{
     width:65vh;
     height: 45vh;
-    background-image: url('/public/images/locationImage.jpg');
-    border-radius: 0px 8px 8px 0px;
+    background-image: url('/public/images/churchInterior.jpg');
+    border-radius: 8px 0px 0px 8px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% 60%;
+    background-position: 45% 60%;
+    
   }
 
   
@@ -273,6 +275,54 @@
       padding: 1rem;
       padding-bottom: 0;
       background: #fff;
+    }
+
+    .alignment{
+      margin-left: 14vh;
+    }
+
+
+    .card__divide__info-cardL {
+      width:65vh;
+      height: 45vh;
+      position: relative;
+      background-color: #fff;
+      border-radius: 0px 0px 8px 8px;
+      border-width: 1px;
+      border-color:#252e4833;
+      border-style: solid;
+    }
+  
+    .card__divide__info-cardR {
+      width:65vh;
+      position: relative;
+      background-color: #fff;
+      border-radius: 0px 0px 8px 8px;
+      border-width: 1px;
+      border-color:#252e4833;
+      border-style: solid;
+      height: 45vh;
+      padding-left: 2vh;
+    }
+    .card__divide__imageL{
+      width:65vh;
+      height: 45vh;
+      background-image: url('/public/images/scheduledService.jpg');
+      border-radius: 8px 8px 0px 0px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 0% 80%;
+    }
+  
+    .card__divide__imageR{
+      width:65vh;
+      height: 45vh;
+      background-image: url('/public/images/churchInterior.jpg');
+      border-radius: 8px 8px 0px 0px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 45% 60%;
+      
     }
    
 }

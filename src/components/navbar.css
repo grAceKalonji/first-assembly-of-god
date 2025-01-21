@@ -32,6 +32,8 @@
   }
 
   .FAGLogo{
+    position: absolute;
+    left: 50px;
     max-width: 12vh;
     max-height: 12vh;
   }
@@ -53,7 +55,7 @@
   }
   
   .nav-item {
-    height: 80px;
+    height: 40px; 
   }
   
   .nav-links {
@@ -62,11 +64,12 @@
     align-items: center;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    height: 100%;
+
   }
   
   .nav-links:hover {
     width: 100%;
+    border-radius: 2px;
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
   }
@@ -90,7 +93,14 @@
     .NavbarItems {
       position: relative;
     }
-  
+
+    .FAGLogo{
+      position: absolute;
+      left: -10px;
+      max-width: 12vh;
+      max-height: 12vh;
+    }
+
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -100,24 +110,27 @@
       top: 80px;
       opacity: 1;
       transition: all 0.5s ease;
-
     }
   
     .nav-menu.active {
       background: #413636;
+      color: #fff;
       align-items: center;
-      left: 0;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
       height: fit-content;
-      width: 100%;
+      width: 50%;
       max-height: fit-content;
+      right: 0;
+      left: auto;
+      margin: auto;
     }
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      align-items: center;
+      padding: 2vh;
       width: 100%;
     }
   
@@ -132,6 +145,10 @@
       top: 0;
       left: 0;
       transform: translate(25%, 50%);
+    }
+
+    .nav-item {
+      height: 60px;
     }
   
     .menu-icon {
@@ -148,6 +165,8 @@
       color: #fff;
       font-size: 2rem;
     }
+
+
   
     .nav-links-mobile {
       display: block;

@@ -92,6 +92,7 @@ function Navbar() {
                rel="noopener noreferrer"
              >
                PayPal
+               
              </a>
              </li>
           {isMobile && (

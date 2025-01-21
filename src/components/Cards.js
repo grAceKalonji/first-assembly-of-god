@@ -7,7 +7,7 @@ import { Button } from './Button';
 function Cards() {
   return (
     <div className= "cards">
-      <section id="servicesSection"> 
+       
       <h3> Our church </h3>
       <div className= "Church__image">
       </div>
@@ -65,16 +65,19 @@ function Cards() {
 
 
       <div className="card__divide">
-      <div className="card__divide__info-cardL">
+       
+      <div className="card__divide__imageR" ></div><div className="card__divide__info-cardL">
         <h1> Location </h1>
         <p><a href="https://www.google.com/maps/dir/41.6677888,-70.9197824/243+Cumberland+Ave,+Portland,+ME+04101/@42.659059,-72.2509789,8z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cb29c6b765c62eb:0xb07e8e044db62f83!2m2!1d-70.2574516!2d43.6606283?entry=ttu&g_ep=EgoyMDI1MDExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">243 Cumberland Ave. <br/> Portland, ME 04101</a></p>
-      </div> 
-      <div className="card__divide__imageR" ></div>
       </div>
-
+      <section id="servicesSection"></section>
+      </div>
+      
       <div className="card__divide1">
+      
       <div className="card__divide__imageL" >
       </div>
+      
       <div className="card__divide__info-cardR" >
         <h1> Scheduled Services </h1>
         <p>Sunday Morning Service: 10:00 AM <br/>
@@ -86,7 +89,7 @@ function Cards() {
       </div>
 
       </div>
-      </section>
+      
       
     </div>
   )

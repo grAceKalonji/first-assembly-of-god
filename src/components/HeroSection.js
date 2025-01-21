@@ -14,6 +14,18 @@ function HeroSection() {
   ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,6 +55,18 @@ function HeroSection() {
         For<br />  it is time to seek the LORD, Till He comes and rains righteousness<br />  
         on you.”<br /> Hosea 10:19 </p>
       )}
+      {currentVideoIndex === 0 ? (
+        windowWidth < 1024 ? (
+          <p className="video-description" style={{ textAlign: 'center' }}>
+            
+          </p>
+        ) : (
+          <p className="video-description" style={{ textAlign: 'left' }}>
+            <br /><br /><br /><br /><br />
+          </p>
+        )
+      ) : null}
+
       </div>
       <button className="toggle-button" onClick={toggleVideo}>Next</button>
 

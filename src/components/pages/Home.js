@@ -17,8 +17,6 @@ function Home() {
       <Cards/>
       <DonateSec/>
       <StackedCard/>
-      {/* <BookCard/> */}
-
       <AboutUsSection/>
       <Quote/>
       
